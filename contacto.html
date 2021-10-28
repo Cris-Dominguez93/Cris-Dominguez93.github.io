@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/contacto.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-flex">
+        <header>
+            <div id="logo">
+                <img src="imagenes/logo.jpg" alt="logo">
+            </div>
+            <nav id="menu">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="#">Contacto</a>
+            </nav>
+            <div id="redes">
+                <div class="icono"><a href="https://www.facebook.com/vuelaelpez/"><img src="imagenes/iconos/facebook.svg" alt="facebook"></a></div>
+                <div class="icono"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi96eHhuJ_zAhU0DrkGHRs9BeAQFnoECAIQAQ&url=https%3A%2F%2Fwww.instagram.com%2Fvuelaelpez%2F%3Fhl%3Den&usg=AOvVaw23qW9YO8fnBoSvhhLcLFi3"><img src="imagenes/iconos/instagram.svg" alt="instagram"></a></div>
+                <div class="icono"><a href="https://twitter.com/vuelaelpez?lang=en"><img src="imagenes/iconos/twitter.svg" alt="twitter"></a></div>
+            </div>
+        </header>
+        
+        <div id="banner"><img src="imagenes/Banner.jpg" alt="banner"></div>
+        
+        <main>
+            <div class="containerNosotros">
+                <div class="formularioContacto">
+                    <h2>CONTACTO</h2><br>
+                    <form action="" id="form">
+                        <input type="text°" name="nombre" id="nombre" placeholder="Nombre" required>
+                        <input type="email" name="email" id="mail" placeholder="Correo electronico" required>
+                        <input type="text" name="telefono" id="telefono" placeholder="Numero de telefono" required>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+                        <input type="submit" value="Enviar" id="boton">
+                        <p class="warnings" id="warnings"></p>
+                    </form>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <div class="container-footer">
+                <p>Todos los derechos reservados &#169 2021</p> 
+            </div>
+        </footer>
+    </div>
+    <script src="js/contacto.js"></script>
+</body>
+</html>

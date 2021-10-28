@@ -1,0 +1,352 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+    box-sizing: border-box;
+}
+/*contenedor flex del body*/
+
+.contenedor-flex{
+    width: 100%;
+    height: 100%;
+    background-color:#162745C9;
+    display: flex;
+    flex-direction: column;
+}
+/*Inicio de la seccion del header*/
+.contenedor-flex header{
+    width: 100%;
+    background-color: #162745;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.contenedor-flex header #logo{
+    width: 10%;
+}
+
+.contenedor-flex header #logo img{
+    width: 100%;
+    height: 130px;
+}
+
+.contenedor-flex header #menu{
+    width: 60%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-flex header #menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0px 20px;
+    padding: 10px 20px;
+}
+
+.contenedor-flex header #menu a:hover{
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.contenedor-flex header #menu a:focus{
+    text-decoration: underline white;
+}
+
+.contenedor-flex header #redes{
+    width: 125px;
+    height: 50px;
+    background-color: #111F36;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedor-flex header #redes .icono:hover{
+    cursor: pointer;
+}
+
+/*Banner*/
+#banner{
+    width: 100%;
+    
+}
+#banner img{
+    width: 100%;
+    height: 300px;
+}
+/*seccion del contenedor de las cards de las actividades*/
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main .actividades{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .actividades .actividad{
+    width: 30%;
+    margin: 10px;
+    background-color: #162745;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main .actividades .actividad a{
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+main .actividades .actividad a img{
+    width: 100%;
+    height: 300px;
+    border-radius: 50px 50px 0px 0px;
+}
+
+main .actividades .actividad a .texto-actividad{
+    height: 100px;
+    text-align: left;
+    font-size: .8rem;
+    margin: 20px;
+}
+
+/* main info */
+
+main .container-info{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2%;
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .container-info .nosotros-resumido{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+main .container-info .nosotros-resumido .logo-redondo{
+    width: 100px;
+    height: 100px;    
+}
+
+main .container-info .nosotros-resumido .logo-redondo img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+/* texto descriptivo */
+
+main .container-info .nosotros-resumido .texto-resumido{
+    margin-top: 8%;
+    text-align: justify;
+}
+
+main .container-dire{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+main .container-dire .linea{
+    width: auto;
+    border-top: 1px solid white;
+    margin: 5% 0% 5%;
+}
+
+/* footer */
+
+footer .container-footer{
+    width: 100%;
+    height: 100px;
+    background-color: #111F36;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Medias query*/
+
+/*tablet*/
+
+@media screen and (max-width:800px){
+    /*header*/
+    .contenedor-flex header{
+        width: 100%;
+        height: 100%; 
+    }
+    
+    .contenedor-flex header #logo{
+        width: 12%;
+    }
+    
+    .contenedor-flex header #logo img{
+        width: 100%;
+        height: 5%;
+    }
+    
+    .contenedor-flex header #menu{
+        width: 50%;
+        height: 50%;  
+    }
+    
+    .contenedor-flex header #menu a{
+        margin: 0px 20px;
+        padding: 10px 10px;
+        font-size: .8em;
+    }
+
+    .contenedor-flex header #redes{
+        width: 100px;
+        height: 40px;
+    }
+
+    .contenedor-flex header #redes img{
+        width: 85%;
+    }
+    /*banner*/
+    #banner{
+        width: 100%;
+        
+    }
+    #banner img{
+        height: 200px;
+    }
+    
+    /*cards*/
+    
+    main .actividades .actividad{
+        width: 45%;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:425px){
+
+    /*Inicio de la seccion del header*/
+    .contenedor-flex{
+        height: 100%;
+    }
+
+    /*header*/
+    .contenedor-flex header{
+        width: 100%;
+        height: auto; 
+    }
+
+    .contenedor-flex header #logo{
+        width: 12%;
+    }
+
+    .contenedor-flex header #logo img{
+        width: 100%;
+        height: 5%;
+    }
+
+    .contenedor-flex header #menu{
+        width: 65%;
+        height: 50%;  
+    }
+
+    .contenedor-flex header #menu a{
+        margin: 0px 5px;
+        padding: 10px 15px;
+        font-size: .5rem;
+    }
+
+    .contenedor-flex header #redes{
+        width: 65px;
+        height: 30px;
+    }
+
+    .contenedor-flex header #redes img{
+        width: 70%;
+    }
+    /*banner*/
+    #banner{
+        width: 100%;
+        
+    }
+    #banner img{
+        height: 200px;
+    }
+
+    /*seccion del contenedor de las cards de las actividades*/
+    main .actividades{
+        font-size: .5rem;
+    }
+
+    main .actividades .actividad{
+        width: 40%;
+        border-radius: 20px;
+    }
+
+    main .actividades .actividad a img{
+        width: 100%;
+        height: 125px;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+    main .actividades .actividad a .texto-actividad{
+        height: 55px;
+        text-align: left;
+        font-size: .5rem;
+        margin: 20px;
+    }
+
+    /* texto descriptivo */
+
+    main .container-info{
+        font-size: .5rem;
+    }
+
+    main .container-info .nosotros-resumido .logo-redondo{
+        width: 65px;
+        height: 65px;    
+    }
+
+    main .container-info .nosotros-resumido .logo-redondo img{
+        width: 100%;
+        height: 100%;
+    }
+
+    /*Footer*/
+
+    footer .container-footer{
+        height: 100px;
+        padding: auto;
+        font-size: .7rem;        
+    }
+}

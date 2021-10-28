@@ -1,0 +1,320 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*contenedor flex del body*/
+.contenedor-flex{
+    width: 100%;
+    height: 100%;
+    background-color:#162745C9;
+    display: flex;
+    flex-direction: column;
+}
+/*Inicio de la seccion del header*/
+.contenedor-flex header{
+    width: 100%;
+    background-color: #162745;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.contenedor-flex header #logo{
+    width: 10%;
+}
+
+.contenedor-flex header #logo img{
+    width: 100%;
+    height: 130px;
+}
+
+.contenedor-flex header #menu{
+    width: 60%;
+    height: 10%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-flex header #menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0px 20px;
+    padding: 10px 20px;
+    
+}
+
+.contenedor-flex header #menu a:hover{
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.contenedor-flex header #menu a:focus{
+    text-decoration: underline white;
+}
+
+.contenedor-flex header #redes{
+    width: 125px;
+    height: 50px;
+    background-color: #111F36;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contenedor-flex header #redes .icono:hover{
+    cursor: pointer;
+}
+
+/*Banner*/
+#banner{
+    width: 100%;
+    
+}
+#banner img{
+    width: 100%;
+    height: 300px;
+}
+
+main .containerNosotros{
+    width: 100%;
+    margin: 0;
+}
+
+/*Formulario*/
+
+main .containerNosotros .formularioContacto{
+    width: 70%;
+    margin: 20px auto 20px;
+    padding: 2%;
+    background-color: #424E63;
+    border-radius: 10px;
+}
+
+main .containerNosotros .formularioContacto form{
+    margin: auto;
+    width: 75%;
+    padding: 4%;
+    box-sizing: border-box;
+}
+
+main .containerNosotros .formularioContacto h2{
+    text-align: center;
+    color: blanchedalmond;
+}
+
+main .containerNosotros .formularioContacto input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 2% 0% 2%;
+    border:none;
+}
+
+main .containerNosotros .formularioContacto #mensaje{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    margin: 5% 0% 2%;
+}
+
+main .containerNosotros .formularioContacto #email, #telefono{
+    width: 100%;  
+}
+
+main .containerNosotros .formularioContacto #email{
+    margin-right: auto;
+}
+
+main .containerNosotros .formularioContacto #boton{
+    background-color:#162745;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+main .containerNosotros .formularioContacto .warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: white;
+    padding-top: 20px;
+}
+
+/*footer*/
+
+footer .container-footer{
+    width: 100%;
+    height: 100px;
+    background-color: #111F36;
+    text-align: center;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Medias querys*/
+
+/* Tablet */
+
+@media screen and (max-width:800px){
+    /*header*/
+    .contenedor-flex header{
+        width: 100%;
+        height: 100%; 
+    }
+    
+    .contenedor-flex header #logo{
+        width: 12%;
+    }
+    
+    .contenedor-flex header #logo img{
+        width: 100%;
+        height: 5%;
+    }
+    
+    .contenedor-flex header #menu{
+        width: 50%;
+        height: 50%;  
+    }
+    
+    .contenedor-flex header #menu a{
+        margin: 0px 20px;
+        padding: 10px 10px;
+        font-size: .8em;
+    }
+
+    .contenedor-flex header #redes{
+        width: 100px;
+        height: 40px;
+    }
+
+    .contenedor-flex header #redes img{
+        width: 85%;
+    }
+    /*banner*/
+    #banner{
+        width: 100%;
+        
+    }
+    #banner img{
+        height: 200px;
+    }
+
+    /*formulario*/
+    
+    main .containerNosotros .formularioContacto input{
+        height: 30px;
+        border-radius: 5px;
+        margin: 1.5% 0% 1.5%;
+        border:none;
+    }
+
+    main .containerNosotros .formularioContacto #email, #telefono{
+        width: 100%;  
+    }
+
+    main .containerNosotros .formularioContacto #email{
+        margin-right: auto;
+    }
+
+    /*Footer*/
+
+    footer .container-footer{
+        height: 100px;
+        padding: auto;
+        
+    }
+
+
+}
+
+/* Movil */
+
+@media screen and (max-width:425px){
+
+    .contenedor-flex{
+        height: 100%;
+    }
+
+    /*header*/
+    .contenedor-flex header{
+        width: 100%;
+        height: auto; 
+    }
+    
+    .contenedor-flex header #logo{
+        width: 12%;
+    }
+    
+    .contenedor-flex header #logo img{
+        width: 100%;
+        height: 5%;
+    }
+    
+    .contenedor-flex header #menu{
+        width: 65%;
+        height: 50%;  
+    }
+    
+    .contenedor-flex header #menu a{
+        margin: 0px 5px;
+        padding: 10px 15px;
+        font-size: .5rem;
+    }
+
+    .contenedor-flex header #redes{
+        width: 65px;
+        height: 30px;
+    }
+
+    .contenedor-flex header #redes img{
+        width: 70%;
+    }
+    /*banner*/
+    #banner{
+        width: 100%;
+        
+    }
+    #banner img{
+        height: 200px;
+    }
+
+    /* Main nosotros */
+    
+    main .container-nosotros .nosotros-texto{
+        font-size: .5rem;
+    }
+    
+    main .fotos .foto{
+        width: 100%;    
+    }
+    
+    main .fotos .foto img{
+        width: 100%;
+        height: 100px;
+    }
+
+    main .containerNosotros .formularioContacto .warnings{
+        font-size: .5rem;
+    }
+
+    /*Footer*/
+
+    footer .container-footer{
+        height: 100px;
+        padding: auto;
+        font-size: .7rem;        
+    }
+}
+

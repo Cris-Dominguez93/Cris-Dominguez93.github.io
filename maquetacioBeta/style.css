@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container{
+    width: 600px;
+    height: 1024px;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    flex-direction: column;
+}
+
+#header{
+    width: 600px;
+    height: 70px;
+    background-color: rgb(92, 91, 91);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#header #contenedor-imagen{
+    width:15%;
+    height: 100%;
+    background-color: rgb(58, 58, 58);
+}
+
+#header #menu{
+    width: auto;
+    height: 100%;
+    background-color: rgb(34, 34, 34);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#header #menu #item{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    
+    padding: 2px 15px;
+    text-decoration: none;
+    color: white;
+    
+}
+
+#contenedor-redes{
+    background-color: rgb(58, 58, 58);
+    width: 10%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#banner{
+    height: 200px;
+    width: 100%;
+    background-color: grey;
+}
+
+#main{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(107, 105, 105);
+    display: flex;
+    flex-direction: column;
+}
+
+.actividades{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(83, 83, 83);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.actividad{
+    width: 30%;
+    height: 150px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.actividad-taller{
+    width: 64%;
+    height: 150px;
+    background-color: black;
+    border-radius: 10px;
+}
